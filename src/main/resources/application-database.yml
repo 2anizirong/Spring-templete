@@ -1,0 +1,19 @@
+# Local Profile
+spring:
+  config:
+    activate:
+      on-profile: local
+  datasource:
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
+    url: ${DB_URL}
+---
+# Dev Profile
+spring:
+  config:
+    activate:
+      on-profile: dev
+  datasource:
+    username: ${DEV_DB_USERNAME}
+    password: ${DEV_DB_PASSWORD}
+    url: ${DEV_DB_URL}
